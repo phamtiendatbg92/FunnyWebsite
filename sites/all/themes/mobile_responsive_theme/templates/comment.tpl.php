@@ -62,30 +62,17 @@
   <?php print $picture; ?>
 
   <div class="comment-text">
-
-    <?php if ($new): ?> <span class="new"><?php print $new; ?></span>
-    <?php endif; ?>
-
-    <?php print render($title_prefix); ?>
-    <h3<?php print $title_attributes; ?>><?php print $title; ?></h3>
-    <?php print render($title_suffix); ?>
-
     <div class="content"<?php print $content_attributes; ?>>
       <?php
         // We hide the comments and links now so that we can render them later.
         hide($content['links']);
         print render($content);
       ?>
-      <?php if ($signature): ?>
-      <div class="user-signature clearfix"><?php print $signature; ?></div>
-      <?php endif; ?>
     </div> <!-- /.content -->
 
     <div class="attribution">
       <div class="comment-submitted">
-        <span class="commenter-name"><i class="fa fa-user"></i> <?php print $author; ?></span><span> | </span>
-        <span class="comment-time"><i class="fa fa-calendar"></i> <?php print $created; ?></span><span> | </span>
-        <span class="comment-permalink"><?php print $permalink; ?></span>
+        <span class="commenter-name"><i class="fa fa-user"></i> <?php print $author; ?>
       </div>
     </div>
 

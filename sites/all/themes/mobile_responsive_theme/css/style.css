@@ -348,7 +348,8 @@ b{
 }
 
 .top_right{
-  float: right;
+  float: left;
+  margin-left:20px;
 }
 
 #logo {
@@ -661,19 +662,19 @@ aside #user-login-form input.form-text{
 /* 3 columns */
 
 body.two-sidebars .content-sidebar-wrap {
-  width:79%;
+  width:78%;
 }
 
 body.two-sidebars #content {
-  width:73%;
+  width:75%;
 }
 
 body.two-sidebars #sidebar-first {
-  width: 24%;
+  width: 22%;
 }
 
 body.two-sidebars #sidebar-second {
-  width: 19%;
+  width: 20%;
 }
 
 /* 2 columns: sidebar-first */
@@ -1106,7 +1107,7 @@ img {
 }
 
 .comment div.user-picture img { 
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 .comment { 
@@ -1115,7 +1116,7 @@ img {
 }
 
 .comment .indented { 
-  margin-left: 40px; 
+  margin-left: 0px; 
 }
 
 .comment-unpublished { 
@@ -1124,21 +1125,18 @@ img {
 }
 
 .user-picture{
-  text-align: center;
+  text-align: left;
 }
 
 .user-picture img {
-  border-radius: 50%;
   position: relative;
-  bottom: -40px;
-  margin-top: -30px;
-  border: 8px solid #9BA2AF;
+  float:left;
 }
 
 #comments .comment .comment-text{
   background: #FFF;
   border-top: 8px solid #9BA2AF;
-  padding: 4% 5%;
+  padding: 4%;
 }
 
 #comments .attribution{
